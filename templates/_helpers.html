@@ -1,0 +1,7 @@
+{% macro bi(value, lang) -%}
+    {% if lang == "ar" %}
+        {{ value.ar }}
+    {% else %}
+        {{ value.en }}
+    {% endif %}
+{%- endmacro %}

@@ -1,0 +1,367 @@
+{
+  "site": {
+    "name": "Walid El Sayed Zaki Mahmoud",
+    "short_name": "Walid Zaki",
+    "initials": "WZ",
+    "location": "Alexandria, Egypt",
+    "email": "eng.waleedzaky@gmail.com",
+    "phone": "+20 100 892 6754",
+    "linkedin": "https://www.linkedin.com/in/walid-zaki-mba-06a242b",
+    "cv_file_name": "Eng.Walid_Zaki_CV_2025_Senior-Technical-Team-Leader.pdf",
+    "profile_image": "images/profile-headshot.jpg",
+    "about_image": "images/about-photo.jpg",
+    "display_name": {
+      "ar": "وليد السيد زكي محمود",
+      "en": "Walid El Sayed Zaki Mahmoud"
+    },
+    "display_short_name": {
+      "ar": "وليد زكي",
+      "en": "Walid Zaki"
+    },
+    "display_location": {
+      "ar": "الإسكندرية، مصر",
+      "en": "Alexandria, Egypt"
+    },
+    "organization_name": {
+      "ar": "مكتبة الإسكندرية",
+      "en": "Bibliotheca Alexandrina"
+    },
+    "organization_logo": "images/ba-logo.png"
+  },
+  "hero": {
+    "eyebrow": {
+      "ar": "",
+      "en": ""
+    },
+    "title_lead": {
+      "ar": "مرحبًا، أنا",
+      "en": "Hello, I'm"
+    },
+    "title_role": {
+      "ar": "رئيس فريق عمل تقني متخصص",
+      "en": "Senior ICT Technical Team Leader"
+    },
+    "summary": {
+      "ar": "قائد تقني بخبرة تتجاوز 18 عامًا في البنية التحتية، الاتصالات الموحدة، والتحول الرقمي داخل البيئات المؤسسية.",
+      "en": "Senior technical leader with 18+ years of experience in infrastructure operations, unified communications, and digital transformation."
+    },
+    "cta_primary": {
+      "ar": "استعرض الأعمال",
+      "en": "See selected work"
+    },
+    "cta_secondary": {
+      "ar": "تواصل معي",
+      "en": "Contact me"
+    },
+    "badges": [
+      {
+        "ar": "18+ سنة خبرة",
+        "en": "18+ years experience"
+      },
+      {
+        "ar": "قيادة فرق تقنية",
+        "en": "Technical leadership"
+      },
+      {
+        "ar": "اتصالات موحدة وتحول رقمي",
+        "en": "Unified communications & digital transformation"
+      }
+    ]
+  },
+  "about": {
+    "title": {
+      "ar": "نبذة عني",
+      "en": "About me"
+    },
+    "text": {
+      "ar": "أمتلك خبرة واسعة في تشغيل بيئات تكنولوجيا المعلومات، إدارة الخدمات التقنية، دعم الأعمال المؤسسية، وتوجيه فرق العمل لتحقيق الاستقرار والتحسين المستمر.",
+      "en": "I bring broad experience in enterprise IT operations, service delivery, communications systems, and team leadership across complex environments."
+    }
+  },
+  "expertise": {
+    "title": {
+      "ar": "الخبرات الأساسية",
+      "en": "Core expertise"
+    },
+    "items": [
+      {
+        "ar": "قيادة فرق تكنولوجيا المعلومات",
+        "en": "IT team leadership"
+      },
+      {
+        "ar": "البنية التحتية والعمليات التقنية",
+        "en": "Infrastructure and operations"
+      },
+      {
+        "ar": "الاتصالات الموحدة وأنظمة الهاتف",
+        "en": "Unified communications and telephony"
+      },
+      {
+        "ar": "التحول الرقمي وتحديث الأنظمة",
+        "en": "Digital transformation and modernization"
+      },
+      {
+        "ar": "إدارة الخدمات والحوادث التقنية",
+        "en": "Service delivery and incident handling"
+      },
+      {
+        "ar": "الأتمتة والتكاملات التقنية",
+        "en": "Automation and technical integrations"
+      }
+    ]
+  },
+  "skills": {
+    "title": {
+      "ar": "المهارات التقنية",
+      "en": "Technical skills"
+    },
+    "groups": [
+      {
+        "title": {
+          "ar": "الاتصالات",
+          "en": "Communications"
+        },
+        "items": [
+          "Avaya Aura",
+          "Cisco Call Manager",
+          "IP Office",
+          "SIP / H.323",
+          "ISDN PRI"
+        ]
+      },
+      {
+        "title": {
+          "ar": "الشبكات والبنية التحتية",
+          "en": "Networks & infrastructure"
+        },
+        "items": [
+          "Cisco Switches",
+          "Routers",
+          "VPN",
+          "LAN/WAN",
+          "HP Aruba",
+          "Firepower Firewall"
+        ]
+      },
+      {
+        "title": {
+          "ar": "الأنظمة والمنصات",
+          "en": "Systems & platforms"
+        },
+        "items": [
+          "VMware ESXi",
+          "Hyper-V",
+          "Active Directory",
+          "Exchange",
+          "Azure",
+          "Microsoft 365"
+        ]
+      },
+      {
+        "title": {
+          "ar": "المراقبة والأدوات",
+          "en": "Monitoring & tools"
+        },
+        "items": [
+          "Zabbix",
+          "Nagios",
+          "NEDI",
+          "Veeam",
+          "Python",
+          "PowerShell",
+          "Linux"
+        ]
+      }
+    ]
+  },
+  "work": {
+    "title": {
+      "ar": "أبرز الأعمال والإنجازات",
+      "en": "Selected work and achievements"
+    },
+    "items": [
+      {
+        "title": {
+          "ar": "تحديث بيئة ICT والتحول الرقمي",
+          "en": "ICT modernization and digital transformation"
+        },
+        "text": {
+          "ar": "المشاركة في تقييم الأنظمة الحالية، إعداد المواصفات الفنية، والمساعدة في الانتقال من الأنظمة التقليدية إلى حلول رقمية حديثة.",
+          "en": "Supported technology surveys, technical specifications, and transition planning from legacy systems to modern digital solutions."
+        }
+      },
+      {
+        "title": {
+          "ar": "حلول الرد الآلي ومراكز الاتصال",
+          "en": "Auto attendant and call center solutions"
+        },
+        "text": {
+          "ar": "تصميم وتنفيذ حلول للرد الآلي والطوابير والمراقبة لتحسين كفاءة استقبال المكالمات وتقليل الفاقد.",
+          "en": "Implemented auto attendant, queueing, and monitoring solutions to improve call handling and reduce dropped calls."
+        }
+      },
+      {
+        "title": {
+          "ar": "أتمتة عمليات الشبكات باستخدام Python",
+          "en": "Python-based network automation"
+        },
+        "text": {
+          "ar": "كتابة سكربتات لجمع مخرجات أوامر الشبكة من السويتشات بهدف تحسين الكفاءة وتقليل العمل اليدوي المتكرر.",
+          "en": "Built Python scripts to run network commands across switches and extract outputs to improve efficiency."
+        }
+      },
+      {
+        "title": {
+          "ar": "تفعيل الاجتماعات المرئية والفعاليات الرقمية",
+          "en": "Video conferencing and digital events"
+        },
+        "text": {
+          "ar": "تشغيل ودعم حلول الاجتماعات المرئية والندوات عبر الإنترنت باستخدام Teams وZoom وWebEx في مواقع وسيناريوهات تشغيل متعددة.",
+          "en": "Rolled out and supported Teams, Zoom, and WebEx for meetings and virtual events across multiple environments."
+        }
+      }
+    ]
+  },
+  "timeline": {
+    "title": {
+      "ar": "الخبرة المهنية",
+      "en": "Career timeline"
+    },
+    "items": [
+      {
+        "period": "Jul 2016 – Present",
+        "company": {
+          "ar": "مكتبة الإسكندرية",
+          "en": "Bibliotheca Alexandrina"
+        },
+        "role": {
+          "ar": "رئيس وحدة اتصالات ICT",
+          "en": "Head of ICT Communication Unit"
+        },
+        "logo": "images/ba-logo.png"
+      },
+      {
+        "period": "Jul 2013 – Jun 2016",
+        "company": {
+          "ar": "مكتبة الإسكندرية",
+          "en": "Bibliotheca Alexandrina"
+        },
+        "role": {
+          "ar": "مهندس اتصالات تقنية معلومات أول",
+          "en": "Principal IT Communication Engineer"
+        },
+        "logo": "images/ba-logo.png"
+      },
+      {
+        "period": "Jul 2009 – Jun 2013",
+        "company": {
+          "ar": "مكتبة الإسكندرية",
+          "en": "Bibliotheca Alexandrina"
+        },
+        "role": {
+          "ar": "مهندس اتصالات تقنية معلومات",
+          "en": "IT Communication Engineer"
+        },
+        "logo": "images/ba-logo.png"
+      },
+      {
+        "period": "May 2007 – Jun 2009",
+        "company": {
+          "ar": "مكتبة الإسكندرية",
+          "en": "Bibliotheca Alexandrina"
+        },
+        "role": {
+          "ar": "مهندس اتصالات تقنية معلومات مبتدئ",
+          "en": "Junior IT Communication Engineer"
+        },
+        "logo": "images/ba-logo.png"
+      },
+      {
+        "period": "Nov 2006 – Apr 2007",
+        "company": "Summit Technology Solutions",
+        "role": {
+          "ar": "مهندس صوت ميداني - فريق Avaya",
+          "en": "Voice Field Engineer - Avaya Voice Team"
+        }
+      }
+    ]
+  },
+  "contact": {
+    "title": {
+      "ar": "تواصل معي",
+      "en": "Get in touch"
+    },
+    "intro": {
+      "ar": "للتواصل بخصوص الفرص المهنية أو الاستشارات أو التعاون في مشاريع البنية التحتية والاتصالات.",
+      "en": "Reach out for leadership opportunities, consulting, or collaboration on infrastructure and communications projects."
+    }
+  },
+  "gallery": {
+    "title": {
+      "ar": "معرض الصور",
+      "en": "Photo gallery"
+    },
+    "empty": {
+      "ar": "لا توجد صور مضافة الآن. يمكنك رفع الصور في أي وقت من لوحة الإدارة.",
+      "en": "No images yet. You can upload photos anytime from the admin dashboard."
+    },
+    "default_items": [
+      {
+        "image_url": "/static/images/profile-headshot.jpg",
+        "label": {
+          "ar": "الصورة الرسمية",
+          "en": "Professional headshot"
+        },
+        "created_at": "2026-04-04"
+      },
+      {
+        "image_url": "/static/images/about-photo.jpg",
+        "label": {
+          "ar": "صورة شخصية",
+          "en": "Personal photo"
+        },
+        "created_at": "2026-04-04"
+      },
+      {
+        "image_url": "/static/images/tech-illustration.jpg",
+        "label": {
+          "ar": "صورة تقنية إبداعية",
+          "en": "Creative tech illustration"
+        },
+        "created_at": "2026-04-04"
+      }
+    ]
+  },
+  "certifications": {
+    "title": {
+      "ar": "الشهادات والتدريب",
+      "en": "Certifications & training"
+    },
+    "items": [
+      {
+        "ar": "شهادات وتدريبات Avaya Aura وIP Office",
+        "en": "Avaya Aura and IP Office certifications & training"
+      },
+      {
+        "ar": "Cisco CCNA وCCNP",
+        "en": "Cisco CCNA and CCNP"
+      },
+      {
+        "ar": "Microsoft Azure Administrator AZ-104",
+        "en": "Microsoft Azure Administrator AZ-104"
+      },
+      {
+        "ar": "ITIL Foundation v3",
+        "en": "ITIL Foundation v3"
+      },
+      {
+        "ar": "PMP Project Management Training",
+        "en": "PMP project management training"
+      },
+      {
+        "ar": "UHF RFID وKepner-Tregoe Foundation",
+        "en": "UHF RFID and Kepner-Tregoe Foundation"
+      }
+    ]
+  }
+}

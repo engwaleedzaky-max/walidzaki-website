@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body data-lang="en">
+    <main class="admin-page">
+      <section class="admin-shell">
+        <div class="admin-topbar">
+          <h1>Gallery Admin</h1>
+
+          <div class="admin-actions">
+            <a href="{{ url_for('home') }}" class="btn btn-secondary">Open site</a>
+            <form method="post" action="{{ url_for('admin_logout') }}">
+              <button type="submit" class="btn btn-secondary">Logout</button>
+            </form>
+          </div>
+        </div>
+
+        {% if success %}
+          <p class="success-message">{{ success }}</p>
+        {% endif %}
+
+        {% if error %}
+          <p class="error-message">{{ error }}</p>
+        {% endif %}
+
+        <div class="card admin-card">
+          <h2>Storage status</h2>
+          {% if cloudinary_ready %}
+            <p class="success-message">Cloudinary is configured and ready.</p>
+          {% else %}
+            <p class="error-message">Cloudinary is not configured yet. Add the required environment variables in Render first.</p>
+          {% endif %}
+        </div>
+
+        <div class="card admin-card">
+          <h2>Upload new images</h2>
+          <form method="post" action="{{ url_for('admin_gallery_upload') }}" enctype="multipart/form-data" class="admin-form">
+            <label>
+              Select images
+              <input type="file" name="photos" accept="image/*" multiple required />
+            </label>
+
+            <button type="submit" class="btn btn-primary">Upload</button>
+          </form>
+        </div>
+
+        <div class="card admin-card">
+          <h2>Current gallery items</h2>
+
+          {% if not gallery %}
+            <p class="section-text">No uploaded images yet.</p>
+          {% else %}
+            <div class="admin-gallery-list">
+              {% for item in gallery %}
+                <article class="admin-gallery-item">
+                  <img src="{{ item.image_url }}" alt="{{ item.label }}" />
+                  <div class="admin-gallery-meta">
+                    <h3>{{ item.label }}</h3>
+                    <p class="section-text">{{ item.created_at }}</p>
+
+                    <form method="post" action="{{ url_for('admin_gallery_delete') }}">
+                      <input type="hidden" name="public_id" value="{{ item.public_id }}" />
+                      <button type="submit" class="btn btn-secondary danger">Delete</button>
+                    </form>
+                  </div>
+                </article>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

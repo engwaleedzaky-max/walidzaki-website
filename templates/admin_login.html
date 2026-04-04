@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body data-lang="en">
+    <main class="admin-page">
+      <section class="admin-shell">
+        <div class="card admin-card narrow">
+          <h1>Admin login</h1>
+          <p class="section-text">Use your admin password to manage the gallery.</p>
+
+          {% if error %}
+            <p class="error-message">{{ error }}</p>
+          {% endif %}
+
+          <form method="post" action="{{ url_for('admin_login') }}" class="admin-form">
+            <label>
+              Password
+              <input type="password" name="password" required />
+            </label>
+
+            <button type="submit" class="btn btn-primary">Login</button>
+            <a href="{{ url_for('home') }}" class="btn btn-secondary">Back to site</a>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

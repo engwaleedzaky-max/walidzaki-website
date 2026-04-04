@@ -1,0 +1,278 @@
+{% from "_helpers.html" import bi %}
+<!doctype html>
+<html lang="{{ lang }}" dir="{{ 'rtl' if lang == 'ar' else 'ltr' }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ bi(content.site.display_name, lang) }} | Portfolio</title>
+    <meta name="description" content="Professional portfolio website for {{ bi(content.site.display_name, lang) }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body data-lang="{{ lang }}">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#home">{{ bi(content.site.display_short_name, lang) }}</a>
+
+        <div class="nav-actions">
+          <nav class="nav-links">
+            <a href="#about">{{ "من أنا" if lang == "ar" else "About" }}</a>
+            <a href="#skills">{{ "المهارات" if lang == "ar" else "Skills" }}</a>
+            <a href="#certifications">{{ "الشهادات" if lang == "ar" else "Certifications" }}</a>
+            <a href="#work">{{ "الأعمال" if lang == "ar" else "Work" }}</a>
+            <a href="#gallery">{{ "المعرض" if lang == "ar" else "Gallery" }}</a>
+            <a href="#contact">{{ "تواصل" if lang == "ar" else "Contact" }}</a>
+            {% if is_admin %}
+              <a href="{{ url_for('admin_dashboard') }}">Admin</a>
+            {% endif %}
+          </nav>
+
+          <button class="lang-toggle" id="langToggle" type="button">
+            {{ "English" if lang == "ar" else "العربية" }}
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div>
+            <div class="hero-title">
+              <span class="hero-kicker">{{ bi(content.hero.title_lead, lang) }}</span>
+              <h1>{{ bi(content.site.display_name, lang) }}</h1>
+            </div>
+
+            <p class="role-line">{{ bi(content.hero.title_role, lang) }}</p>
+            <p class="hero-text">{{ bi(content.hero.summary, lang) }}</p>
+
+            <div class="hero-actions">
+              <a href="#work" class="btn btn-primary">{{ bi(content.hero.cta_primary, lang) }}</a>
+              <a href="#contact" class="btn btn-secondary">{{ bi(content.hero.cta_secondary, lang) }}</a>
+              <a href="{{ url_for('static', filename='cv/' ~ content.site.cv_file_name) }}" class="btn btn-secondary" target="_blank" rel="noreferrer">
+                {{ "تحميل السيرة الذاتية" if lang == "ar" else "Download CV" }}
+              </a>
+            </div>
+
+            <ul class="badge-list">
+              {% for badge in content.hero.badges %}
+                <li>{{ bi(badge, lang) }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+
+          <aside class="profile-card">
+            <img
+              class="profile-photo"
+              src="{{ url_for('static', filename=content.site.profile_image) }}"
+              alt="{{ bi(content.site.display_short_name, lang) }}"
+            />
+            <h2>{{ bi(content.site.display_short_name, lang) }}</h2>
+            <p class="muted">{{ bi(content.hero.title_role, lang) }}</p>
+
+            <div class="info-stack">
+              <div class="info-chip">{{ bi(content.site.display_location, lang) }}</div>
+              <div class="info-chip email-chip">{{ content.site.email }}</div>
+              <div class="info-chip"><span class="ltr-text phone-text" dir="ltr">&#x200E;{{ content.site.phone }}&#x200E;</span></div>
+            </div>
+
+            <a class="profile-link" href="{{ content.site.linkedin }}" target="_blank" rel="noreferrer">LinkedIn</a>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section section-soft">
+        <div class="container">
+          <div class="section-heading">
+            <h2>{{ bi(content.about.title, lang) }}</h2>
+          </div>
+          <div class="about-grid">
+            <div class="card">
+              <p class="section-text">{{ bi(content.about.text, lang) }}</p>
+            </div>
+            <div class="card about-photo-card">
+              <img
+                class="about-photo"
+                src="{{ url_for('static', filename=content.site.about_image) }}"
+                alt="{{ bi(content.site.display_short_name, lang) }}"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>{{ bi(content.expertise.title, lang) }}</h2>
+          </div>
+
+          <div class="card-grid three">
+            {% for item in content.expertise["items"] %}
+              <article class="card">
+                <p class="strong-text">{{ bi(item, lang) }}</p>
+              </article>
+            {% endfor %}
+          </div>
+
+          <div class="section-heading compact">
+            <h3>{{ bi(content.skills.title, lang) }}</h3>
+          </div>
+
+          <div class="card-grid two">
+            {% for group in content.skills.groups %}
+              <article class="card">
+                <h4>{{ bi(group.title, lang) }}</h4>
+                <div class="tag-list">
+                  {% for skill in group["items"] %}
+                    <span class="tag">{{ skill }}</span>
+                  {% endfor %}
+                </div>
+              </article>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section section-soft">
+        <div class="container">
+          <div class="section-heading">
+            <h2>{{ bi(content.certifications.title, lang) }}</h2>
+          </div>
+
+          <div class="card-grid three">
+            {% for item in content.certifications["items"] %}
+              <article class="card certification-card">
+                <p class="strong-text">{{ bi(item, lang) }}</p>
+              </article>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section section-soft">
+        <div class="container">
+          <div class="section-heading">
+            <h2>{{ bi(content.work.title, lang) }}</h2>
+          </div>
+
+          <div class="card-grid two">
+            {% for item in content.work["items"] %}
+              <article class="card">
+                <h3>{{ bi(item.title, lang) }}</h3>
+                <p class="section-text">{{ bi(item.text, lang) }}</p>
+              </article>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>{{ bi(content.timeline.title, lang) }}</h2>
+          </div>
+
+          <div class="timeline">
+            {% for item in content.timeline["items"] %}
+              <article class="timeline-item">
+                <div class="timeline-period">{{ item.period }}</div>
+                <div class="timeline-body">
+                  <div class="timeline-company">
+                    {% if item.logo %}
+                      <img
+                        class="company-logo"
+                        src="{{ url_for('static', filename=item.logo) }}"
+                        alt="{{ bi(item.company, lang) if item.company is mapping else item.company }}"
+                      />
+                    {% endif %}
+                    <h3 class="company-name">{{ bi(item.company, lang) if item.company is mapping else item.company }}</h3>
+                  </div>
+                  <p class="section-text">{{ bi(item.role, lang) }}</p>
+                </div>
+              </article>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section section-soft">
+        <div class="container">
+          <div class="section-heading">
+            <h2>{{ bi(content.gallery.title, lang) }}</h2>
+          </div>
+
+          {% if gallery %}
+            {% if not cloudinary_ready %}
+              <div class="gallery-note card">
+                <p class="section-text">
+                  {{ "الصور الحالية محلية. لإدارة الصور من لوحة التحكم لاحقًا، قم بضبط Cloudinary." if lang == "ar" else "These are local default images. Configure Cloudinary later to manage gallery uploads from the admin dashboard." }}
+                </p>
+              </div>
+            {% endif %}
+            <div class="gallery-grid">
+              {% for item in gallery %}
+                <article class="gallery-card">
+                  <img
+                    src="{{ item.image_url }}"
+                    alt="{{ bi(item.label, lang) if item.label is mapping else item.label }}"
+                    loading="lazy"
+                  />
+                  <div class="gallery-meta">
+                    <span class="gallery-category">
+                      {{ item.created_at[:10] if item.created_at else "Portfolio" }}
+                    </span>
+                    <h3>{{ bi(item.label, lang) if item.label is mapping else item.label }}</h3>
+                  </div>
+                </article>
+              {% endfor %}
+            </div>
+          {% else %}
+            <div class="card">
+              <p class="section-text">{{ bi(content.gallery.empty, lang) }}</p>
+            </div>
+          {% endif %}
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact-wrap">
+          <div class="section-heading">
+            <h2>{{ bi(content.contact.title, lang) }}</h2>
+            <p class="section-text">{{ bi(content.contact.intro, lang) }}</p>
+          </div>
+
+          <div class="card contact-card">
+            <div class="contact-row">
+              <strong>{{ "البريد الإلكتروني" if lang == "ar" else "Email" }}</strong>
+              <a class="email-link" href="mailto:{{ content.site.email }}">{{ content.site.email }}</a>
+            </div>
+            <div class="contact-row">
+              <strong>{{ "الهاتف" if lang == "ar" else "Phone" }}</strong>
+              <a class="ltr-text phone-text" dir="ltr" href="tel:{{ content.site.phone|replace(' ', '') }}">&#x200E;{{ content.site.phone }}&#x200E;</a>
+            </div>
+            <div class="contact-row">
+              <strong>LinkedIn</strong>
+              <a href="{{ content.site.linkedin }}" target="_blank" rel="noreferrer">{{ "فتح الحساب" if lang == "ar" else "Open profile" }}</a>
+            </div>
+            <div class="contact-row">
+              <strong>{{ "السيرة الذاتية" if lang == "ar" else "CV" }}</strong>
+              <a href="{{ url_for('static', filename='cv/' ~ content.site.cv_file_name) }}" target="_blank" rel="noreferrer">{{ "فتح الملف" if lang == "ar" else "Open PDF" }}</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© {{ current_year }} {{ bi(content.site.display_name, lang) }}</p>
+        <div class="footer-actions">
+          <a href="{{ url_for('admin_login') }}">Admin</a>
+          <a href="#home">Top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
