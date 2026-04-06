@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: eng-walidzaki
+    name: walid-portfolio-flask
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt

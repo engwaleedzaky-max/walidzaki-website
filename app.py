@@ -111,7 +111,7 @@ def home() -> str:
     gallery = list_gallery_images()
     if not gallery:
         gallery = read_json(CONTENT_FILE, {}).get("gallery", {}).get("default_items", [])
-    lang = "en" if request.args.get("lang") == "en" else "ar"
+    lang = "ar" if request.args.get("lang") == "ar" else "en"
 
     return render_template(
         "home.html",

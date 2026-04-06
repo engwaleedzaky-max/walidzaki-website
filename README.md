@@ -82,5 +82,6 @@ CLOUDINARY_FOLDER=walid-portfolio-gallery
 - Light blue theme refresh
 
 
-## Latest tweak
-- Hero name kept on a single line
+## Latest updates
+- Default opening language changed to English
+- Adjusted image vertical positioning and centering
