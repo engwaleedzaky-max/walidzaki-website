@@ -98,3 +98,7 @@ CLOUDINARY_FOLDER=walid-portfolio-gallery
 - Removed gallery dates and titles
 - Made About and Get in touch sections more compact
 - Reduced extra whitespace across the homepage
+
+
+## Latest updates
+- Mobile top navigation fixed to stay horizontal
