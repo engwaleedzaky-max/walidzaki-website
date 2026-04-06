@@ -85,3 +85,9 @@ CLOUDINARY_FOLDER=walid-portfolio-gallery
 ## Latest updates
 - Default opening language changed to English
 - Adjusted image vertical positioning and centering
+
+
+## Latest updates
+- More detailed hero summary
+- Name kept on a single line on desktop
+- Reduced extra spacing across the page
