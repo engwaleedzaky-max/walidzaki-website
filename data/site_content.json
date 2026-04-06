@@ -9,7 +9,7 @@
     "linkedin": "https://www.linkedin.com/in/walid-zaki-mba-06a242b",
     "cv_file_name": "Eng.Walid_Zaki_CV_2025_Senior-Technical-Team-Leader.pdf",
     "profile_image": "images/profile-headshot.jpg",
-    "about_image": "images/about-photo.jpg",
+    "about_image": "images/about-photo-cisco.jpg",
     "display_name": {
       "ar": "وليد السيد زكي محمود",
       "en": "Walid El Sayed Zaki Mahmoud"
@@ -74,8 +74,8 @@
       "en": "About me"
     },
     "text": {
-      "ar": "أمتلك خبرة واسعة في تشغيل بيئات تكنولوجيا المعلومات، إدارة الخدمات التقنية، دعم الأعمال المؤسسية، وتوجيه فرق العمل لتحقيق الاستقرار والتحسين المستمر.",
-      "en": "I bring broad experience in enterprise IT operations, service delivery, communications systems, and team leadership across complex environments."
+      "en": "I bring broad experience in enterprise IT operations, service delivery, communications systems, and team leadership across complex environments. I have led infrastructure modernization, unified communications, service continuity, incident response, and cross-functional technical operations supporting large-scale organizational needs.",
+      "ar": "أمتلك خبرة واسعة في عمليات تكنولوجيا المعلومات المؤسسية، تقديم الخدمات، أنظمة الاتصالات، وقيادة فرق العمل داخل بيئات تشغيل معقدة. وقدت مبادرات تحديث البنية التحتية، والاتصالات الموحدة، واستمرارية الخدمات، والاستجابة للحوادث التقنية، وتشغيل فرق متعددة التخصصات لدعم احتياجات مؤسسية واسعة النطاق."
     }
   },
   "expertise": {
@@ -306,6 +306,14 @@
       "en": "No images yet. You can upload photos anytime from the admin dashboard."
     },
     "default_items": [
+      {
+        "image_url": "/static/images/about-photo-cisco.jpg",
+        "label": {
+          "ar": "صورة شخصية",
+          "en": "Personal photo"
+        },
+        "created_at": "2026-04-07"
+      },
       {
         "image_url": "/static/images/profile-headshot.jpg",
         "label": {

@@ -217,12 +217,6 @@
                     alt="{{ bi(item.label, lang) if item.label is mapping else item.label }}"
                     loading="lazy"
                   />
-                  <div class="gallery-meta">
-                    <span class="gallery-category">
-                      {{ item.created_at[:10] if item.created_at else "Portfolio" }}
-                    </span>
-                    <h3>{{ bi(item.label, lang) if item.label is mapping else item.label }}</h3>
-                  </div>
                 </article>
               {% endfor %}
             </div>
@@ -235,8 +229,8 @@
       </section>
 
       <section id="contact" class="section">
-        <div class="container contact-wrap">
-          <div class="section-heading">
+        <div class="container contact-wrap compact-contact">
+          <div class="section-heading contact-heading">
             <h2>{{ bi(content.contact.title, lang) }}</h2>
             <p class="section-text">{{ bi(content.contact.intro, lang) }}</p>
           </div>

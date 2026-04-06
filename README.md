@@ -91,3 +91,10 @@ CLOUDINARY_FOLDER=walid-portfolio-gallery
 - More detailed hero summary
 - Name kept on a single line on desktop
 - Reduced extra spacing across the page
+
+
+## Latest updates
+- Added new personal photo
+- Removed gallery dates and titles
+- Made About and Get in touch sections more compact
+- Reduced extra whitespace across the homepage
