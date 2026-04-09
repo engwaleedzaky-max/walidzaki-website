@@ -26,7 +26,7 @@
       "ar": "مكتبة الإسكندرية",
       "en": "Bibliotheca Alexandrina"
     },
-    "organization_logo": "images/ba-logo.png"
+    "organization_logo": "images/ba-logo-large.png"
   },
   "hero": {
     "eyebrow": {
@@ -238,7 +238,7 @@
           "ar": "رئيس وحدة اتصالات ICT",
           "en": "Head of ICT Communication Unit"
         },
-        "logo": "images/ba-logo.png"
+        "logo": "images/ba-logo-large.png"
       },
       {
         "period": "Jul 2013 – Jun 2016",
@@ -250,7 +250,7 @@
           "ar": "مهندس اتصالات تقنية معلومات أول",
           "en": "Principal IT Communication Engineer"
         },
-        "logo": "images/ba-logo.png"
+        "logo": "images/ba-logo-large.png"
       },
       {
         "period": "Jul 2009 – Jun 2013",
@@ -262,7 +262,7 @@
           "ar": "مهندس اتصالات تقنية معلومات",
           "en": "IT Communication Engineer"
         },
-        "logo": "images/ba-logo.png"
+        "logo": "images/ba-logo-large.png"
       },
       {
         "period": "May 2007 – Jun 2009",
@@ -274,7 +274,7 @@
           "ar": "مهندس اتصالات تقنية معلومات مبتدئ",
           "en": "Junior IT Communication Engineer"
         },
-        "logo": "images/ba-logo.png"
+        "logo": "images/ba-logo-large.png"
       },
       {
         "period": "Nov 2006 – Apr 2007",

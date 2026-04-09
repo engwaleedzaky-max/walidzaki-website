@@ -101,4 +101,7 @@ CLOUDINARY_FOLDER=walid-portfolio-gallery
 
 
 ## Latest updates
-- Mobile top navigation fixed to stay horizontal
+- Swapped hero sections to show profile card first
+- Career timeline now uses two columns on desktop
+- Replaced and enlarged the attached logo
+- Removed the local default images/gallery notice

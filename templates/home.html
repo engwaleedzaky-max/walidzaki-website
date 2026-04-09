@@ -36,6 +36,26 @@
     <main id="home">
       <section class="hero section">
         <div class="container hero-grid">
+          
+
+          <aside class="profile-card">
+            <img
+              class="profile-photo"
+              src="{{ url_for('static', filename=content.site.profile_image) }}"
+              alt="{{ bi(content.site.display_short_name, lang) }}"
+            />
+            <h2>{{ bi(content.site.display_short_name, lang) }}</h2>
+            <p class="muted">{{ bi(content.hero.title_role, lang) }}</p>
+
+            <div class="info-stack">
+              <div class="info-chip">{{ bi(content.site.display_location, lang) }}</div>
+              <div class="info-chip email-chip">{{ content.site.email }}</div>
+              <div class="info-chip"><span class="ltr-text phone-text" dir="ltr">&#x200E;{{ content.site.phone }}&#x200E;</span></div>
+            </div>
+
+            <a class="profile-link" href="{{ content.site.linkedin }}" target="_blank" rel="noreferrer">LinkedIn</a>
+          </aside>
+
           <div>
             <div class="hero-title">
               <span class="hero-kicker">{{ bi(content.hero.title_lead, lang) }}</span>
@@ -59,24 +79,6 @@
               {% endfor %}
             </ul>
           </div>
-
-          <aside class="profile-card">
-            <img
-              class="profile-photo"
-              src="{{ url_for('static', filename=content.site.profile_image) }}"
-              alt="{{ bi(content.site.display_short_name, lang) }}"
-            />
-            <h2>{{ bi(content.site.display_short_name, lang) }}</h2>
-            <p class="muted">{{ bi(content.hero.title_role, lang) }}</p>
-
-            <div class="info-stack">
-              <div class="info-chip">{{ bi(content.site.display_location, lang) }}</div>
-              <div class="info-chip email-chip">{{ content.site.email }}</div>
-              <div class="info-chip"><span class="ltr-text phone-text" dir="ltr">&#x200E;{{ content.site.phone }}&#x200E;</span></div>
-            </div>
-
-            <a class="profile-link" href="{{ content.site.linkedin }}" target="_blank" rel="noreferrer">LinkedIn</a>
-          </aside>
         </div>
       </section>
 
