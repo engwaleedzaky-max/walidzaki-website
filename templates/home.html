@@ -204,13 +204,6 @@
           </div>
 
           {% if gallery %}
-            {% if not cloudinary_ready %}
-              <div class="gallery-note card">
-                <p class="section-text">
-                  {{ "الصور الحالية محلية. لإدارة الصور من لوحة التحكم لاحقًا، قم بضبط Cloudinary." if lang == "ar" else "These are local default images. Configure Cloudinary later to manage gallery uploads from the admin dashboard." }}
-                </p>
-              </div>
-            {% endif %}
             <div class="gallery-grid">
               {% for item in gallery %}
                 <article class="gallery-card">

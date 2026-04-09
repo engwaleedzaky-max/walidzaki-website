@@ -105,3 +105,7 @@ CLOUDINARY_FOLDER=walid-portfolio-gallery
 - Career timeline now uses two columns on desktop
 - Replaced and enlarged the attached logo
 - Removed the local default images/gallery notice
+
+
+## Latest updates
+- Removed Cloudinary gallery note completely
